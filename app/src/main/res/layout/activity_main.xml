@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/mVertical"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="Vertical" />
+
+            <Button
+                android:id="@+id/mHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="Horizontal" />
+
+            <Button
+                android:id="@+id/mManyGrid"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="ManyGrid" />
+
+            <Button
+                android:id="@+id/mFlexBoxRecycleView"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="NoGrid" />
+            <Button
+                android:id="@+id/mNoGrid"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="mNoGrid" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

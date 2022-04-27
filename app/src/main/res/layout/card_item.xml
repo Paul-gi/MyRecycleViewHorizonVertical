@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#F0F0F0"
+    android:layout_marginRight="@android:dimen/app_icon_size"
+    android:layout_marginBottom="@android:dimen/app_icon_size"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/mToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#F3F903"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/mNameView"
+        app:layout_constraintLeft_toLeftOf="@+id/mCompany"
+        app:layout_constraintRight_toRightOf="@+id/mCompany"
+        app:layout_constraintTop_toBottomOf="@+id/mCompany" />
+
+    <TextView
+        android:id="@+id/mAge"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/mAgeView"
+        app:layout_constraintLeft_toLeftOf="@+id/mName"
+        app:layout_constraintRight_toRightOf="@+id/mName"
+        app:layout_constraintTop_toBottomOf="@+id/mName" />
+
+    <TextView
+        android:id="@+id/mNameView"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="Name"
+        app:layout_constraintLeft_toLeftOf="@+id/mCompanyView"
+        app:layout_constraintRight_toRightOf="@+id/mCompanyView"
+        app:layout_constraintTop_toBottomOf="@+id/mCompanyView" />
+
+    <TextView
+        android:id="@+id/mAgeView"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="Age"
+        app:layout_constraintLeft_toLeftOf="@+id/mNameView"
+        app:layout_constraintRight_toRightOf="@+id/mNameView"
+        app:layout_constraintTop_toBottomOf="@+id/mNameView" />
+
+    <TextView
+        android:id="@+id/mCompanyView"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="company"
+        app:layout_constraintLeft_toLeftOf="@+id/mToolBar"
+       app:layout_constraintRight_toLeftOf="@+id/mCompany"
+        app:layout_constraintTop_toBottomOf="@+id/mToolBar"
+        tools:ignore="NotSibling" />
+
+    <TextView
+        android:id="@+id/mCompany"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/mCompanyView"
+        app:layout_constraintLeft_toRightOf="@+id/mCompanyView"
+        app:layout_constraintRight_toRightOf="@+id/mToolBar"
+        app:layout_constraintTop_toBottomOf="@+id/mToolBar"
+        tools:ignore="MissingConstraints" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        app:layout_constraintLeft_toLeftOf="@+id/mAgeView"
+        app:layout_constraintRight_toRightOf="@+id/mAge"
+        app:layout_constraintTop_toBottomOf="@+id/mAgeView"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
